@@ -157,3 +157,6 @@ a{
     margin-right:auto;
     margin-left: auto;
 }
+li{
+    text-transform: capitalize;
+}

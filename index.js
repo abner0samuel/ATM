@@ -26,9 +26,11 @@ function go_back(){
     sli_ii.innerText = 'buy date'
     sli_iii.innerText = 'ACCOUNT SITTING'
     sli_iv.innerText = 'create Account'
+
 }
 
 leftbtnone.addEventListener("click",()=>{
+    
         li_i.innerText = '#10,000'
         li_ii.innerText = '#5,000'
         li_iii.innerText = '#1000'
@@ -37,15 +39,16 @@ leftbtnone.addEventListener("click",()=>{
         sli_ii.innerText = '#40,000'
         sli_iii.innerText = '#30,000'
         sli_iv.innerText = 'other Amount'
+        li_ii.sty
     
     leftbtnone.addEventListener("click",()=>{
-        text.innerText='take your cash'
-    })
-    leftbtntwo.addEventListener("click", () => {
-        text.innerText = 'take your cash'
-    })
-    leftbtnthree.addEventListener("click", () => {
-        text.innerText = 'take your cash'
+        if (li_i.innerText === '#11,000'){
+            text.innerText = 'take your cash'
+        }else{
+                go_back()
+        }
+        
+     
     })
     rightbtnone.addEventListener("click", () => {
         text.innerText = 'take your cash'
@@ -60,21 +63,22 @@ leftbtnone.addEventListener("click",()=>{
         
     })
 })
+rightbtnone.addEventListener("click",()=>{
+    text.innerText=['MTN ','AIRTEL ','9MOBLE ','GLO ']    
+    li_i.innerText =" MTN"
+    li_ii.innerText="airtel"
+    sli_i.innerText="9Moble"
+    sli_ii.innerText="glo"
+    li_iii.innerText=''
+    li_iv.innerText=''
+    sli_iii.innerText=''
+    sli_iv.innerText=''
+})
 leftbtnfour.addEventListener("click", () => {
     go_back()
 })
 leftbtntwo.addEventListener('click',()=>{
+   
     
-    document.createElement('input');
-    document.createAttribute('id','num1')
-    text.innerText(num1)
-    document.createElement('input');
-    document.createAttribute('id', 'num2')
-    text.append(num2)
-    document.createElement('input');
-    document.createAttribute('id', 'num3')
-    text.append(num3)
-    document.createElement('input');
-    document.createAttribute('id', 'num4')
-    text.append(num4)
+    text.innerText='#100,000'
 })
